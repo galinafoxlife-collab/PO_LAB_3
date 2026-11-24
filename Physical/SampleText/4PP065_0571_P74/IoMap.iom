@@ -1,0 +1,19 @@
+VAR_CONFIG
+	::SDCAxisCtr:pwm_period AT %QW."X20MM4456".PeriodDurationPWM;
+	::SDCAxisCtr:axis_X.pwm_value AT %QW."X20MM4456".PulseWidthCurrentPWM01;
+	::SDCAxisCtr:axis_X.reset_error AT %QX."X20MM4456".ClearError01;
+	::SDCAxisCtr:axis_X.reset_counter AT %QX."X20MM4456".ResetCounter01;
+	::SDCAxisCtr:axis_X.counter AT %IW."X20MM4456".Counter01;
+	::SDCAxisCtr:axis_X.endswitch_a_reached AT %IX."X20MM4456".StatusInput03;
+	::SDCAxisCtr:axis_X.endswitch_b_reached AT %IX."X20MM4456".StatusInput04;
+	::SDCAxisCtr:coil_pwm_value AT %QW."X20MM4456".PulseWidthCurrentPWM04;
+	::SDCAxisCtr:coil_clear_error AT %QX."X20MM4456".ClearError04;
+	::SDCAxisCtr:coil_powered AT %IX."X20DI9371".DigitalInput01;
+	::SDCAxisCtr:input_module_ok AT %IX."X20DI9371".ModuleOk;
+	::SDCAxisCtr:pwm_module_ok AT %IX."X20MM4456".ModuleOk;
+	::SDCAxisCtr:motor_pwm_error AT %IX."X20MM4456".PWMError01;
+	::SDCAxisCtr:coil_pwm_error AT %IX."X20MM4456".PWMError04;
+	::SDCAxisCtr:under_voltage AT %IX."X20MM4456".UnderVoltageError;
+	::SDCAxisCtr:over_voltage AT %IX."X20MM4456".OverVoltageError;
+	::SDCAxisCtr:over_temperature AT %IX."X20MM4456".OvertemperatureError;
+END_VAR
